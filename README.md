@@ -44,9 +44,7 @@ sudo apt-get install pkg-config
 ```
 
 #### OpenCV ####
-OpenCV is required to build and run ChromaTag. These instructions are adapted from the [this OpenCV tutorial](http://docs.opencv.org/3.1.0/d7/d9f/tutorial_linux_install.html).
-
-First, download OpenCV 3.1.0 or higher: https://github.com/Itseez/opencv/archive/3.1.0.zip.
+OpenCV4.X is required to build and run ChromaTag. These instructions are adapted from the [this OpenCV tutorial](http://docs.opencv.org/3.1.0/d7/d9f/tutorial_linux_install.html).
 
 Next, Install these packages:
 ```
@@ -59,22 +57,11 @@ sudo apt-get install libtbb2 libtbb-dev
 sudo apt-get install libjpeg-dev 
 sudo apt-get install libpng-dev 
 sudo apt-get install libtiff-dev 
-sudo apt-get install libjasper-dev 
 sudo apt-get install libdc1394-22-dev
+sudo apt install liblcm-dev
 ```
 
 Finally, build OpenCV
-```
-unzip opencv-3.1.0.zip
-cd opencv-3.1.0
-mkdir build
-cd build
-cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..
-make -j4
-sudo make install
-```
-
-OpenCV should now be installed in your system. If you choose to download a different version from 3.1.0, change the text above appropriately. If these instructions do not work for your version of OpenCV, please check the OpenCV provided tutorial for your version because there may be small differences.
 
 
 ### ChromaTag ###

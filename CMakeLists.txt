@@ -166,7 +166,7 @@ endmacro()
 #-----------------------------------------------------#
 
 #Version Required
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.6)
 
 #Entering Prompt
 prompt_top("Entering Top Level CMakeLists.txt.")
